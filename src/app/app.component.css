@@ -1,0 +1,24 @@
+body {
+    background-image: url("spacy.jpeg");
+}
+h1{
+    color:blue;
+}
+textarea{
+    background-attachment: fixed;
+    background-color:floralwhite;
+    border-color:gold;
+}
+select{
+    width: 10%;
+    height: 5%;
+    font-size: 18px;
+}
+input{
+   width: 10%;
+   height: 5%;
+   font-size: 18px; 
+}
+textarea{
+    font-size: 15px;
+}

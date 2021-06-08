@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+  <head>
+  <meta charset="UTF-8">
+  <title>Spacy App</title>
+</head>
+
+<body>
+  <h1>SpaCy Formular</h1>
+  <label for="fname"><h2>Geben Sie Ihr Text an!</h2></label><br>
+  <textarea type="text" id="fname" name = "fname" maxlength="1000"  [formControl]= "text" aria-setsize="345"></textarea>
+  <select [formControl]= "language"><option value="en">English</option><option value="de">Deutsch</option></select>
+  <input type="submit" value="Submit" (click)= "postMethode(text.value.toString(), language.value.toString())">
+  <div>
+    <ul *ngFor="let response of datafrompost">
+      <textarea aria-setsize="345">{{response.text}} == {{response.tag}}</textarea>
+    </ul>
+  </div>
+</body>
+
+</html>
+
